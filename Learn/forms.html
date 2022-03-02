@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create a SignUp Form</title>
+        
+        <style>
+            #register-form {
+                width: 300px;
+                background-color: antiquewhite;
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .input-label {
+                margin: 0;
+                margin-bottom: 4px;
+                margin-top: 12px;
+            }
+
+            .input-item {
+                width: 100%;
+            }
+
+            #terms-check {
+                margin-top: 12px;
+                margin-bottom: 16px;
+            }
+        </style>
+    </head>
+    <body style="background-color: slategrey;">
+        <h1 style="text-align: center;">Sign Up</h1>
+        <form id="register-form">
+            <div>
+                <p class="input-label">Full Name</p>
+                <input class="input-item" type="text" name="fullname">
+            </div>
+            <div>
+                <p class="input-label">Email</p>
+                <input class="input-item" type="text" name="email">
+            </div>
+            <div>
+                <p class="input-label">Password</p>
+                <input class="input-item" type="password" name="password">
+            </div>
+            <div>
+                <p class="input-label">Confirm Password</p>
+                <input class="input-item" type="password" name="confirm-password">
+            </div>
+            <div>
+                <p class="input-label">Gender</p>
+                <input type="radio" name="male" value="male">
+                Male</input>
+                <input type="radio" name="female" value="female">
+                Female</input>
+                <input type="radio" name="other" value="other">
+                Other</input>
+            </div>
+            <div>
+                <p class="input-label">Security Question</p>
+                <select class="input-item" name="security-question">
+                    <option value="birthday-question">What is your birthday?</option>
+                    <option value="first-phone-question">What is your first phone?</option>
+                    <option value="football-club-question">What is your favorite football club?</option>
+                </select>
+            </div>
+            <div>
+                <textarea class="input-item" name="answer" cols="30" rows="6"></textarea>
+            </div>
+            <div>
+                <input id="terms-check" type="checkbox" name="terms-condition" value="accept">
+                I aggree to accept terms and conditions
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </body>
+</html>
