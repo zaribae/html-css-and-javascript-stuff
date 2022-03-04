@@ -1,0 +1,8 @@
+#second-paragraph {
+    border: 4px dashed black;
+    padding: 10px;
+    /* top, right, bot, left */ 
+    /* top/bot, right/left */
+    padding: 10px 12px 10px 12px;
+    margin: 12px 14px 12px 14px;
+}
